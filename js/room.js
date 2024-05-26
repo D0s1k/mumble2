@@ -3,11 +3,10 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
 const memberContainer = document.getElementById('members__container');
 const memberButton = document.getElementById('members__button');
-
 const chatContainer = document.getElementById('messages__container');
 const chatButton = document.getElementById('chat__button');
-
 let activeMemberContainer = false;
+let activeChatContainer = false;
 
 memberButton.addEventListener('click', () => {
   if (activeMemberContainer) {
@@ -18,8 +17,6 @@ memberButton.addEventListener('click', () => {
 
   activeMemberContainer = !activeMemberContainer;
 });
-
-let activeChatContainer = false;
 
 chatButton.addEventListener('click', () => {
   if (activeChatContainer) {
